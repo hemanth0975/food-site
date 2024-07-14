@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Ordering Site</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Foodie's Delight</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#order">Order Now</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-item">
+            <img src="pizza.jpg" alt="Pizza">
+            <h3>Pizza</h3>
+            <p>Delicious cheese pizza with a crispy crust.</p>
+            <p>$10.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="burger.jpg" alt="Burger">
+            <h3>Burger</h3>
+            <p>Juicy beef burger with fresh lettuce and tomato.</p>
+            <p>$8.99</p>
+            <button>Add to Cart</button>
+        </div>
+        <div class="menu-item">
+            <img src="pasta.jpg" alt="Pasta">
+            <h3>Pasta</h3>
+            <p>Rich and creamy Alfredo pasta with chicken.</p>
+            <p>$12.99</p>
+            <button>Add to Cart</button>
+        </div>
+    </section>
+
+    <section id="order">
+        <h2>Order Now</h2>
+        <form action="submit_order.php" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" required>
+            
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+            
+            <label for="order-details">Order Details:</label>
+            <textarea id="order-details" name="order-details" required></textarea>
+            
+            <button type="submit">Place Order</button>
+        </form>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Email: support@foodiesdelight.com</p>
+        <p>Phone: 123-456-7890</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Foodie's Delight. All rights reserved.</p>
+    </footer>
+</body>
+</html>
